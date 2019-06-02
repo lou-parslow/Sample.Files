@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.0</Version>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
     <None Remove="Resources\Text\ASCII.1MB.txt" />
+    <None Remove="Resources\Text\Lorum.Ipsum.txt" />
     <None Remove="Resources\Text\UTF.0.txt" />
     <None Remove="Resources\Text\UTF.10.txt" />
     <None Remove="Resources\Text\UTF.1024.txt" />
@@ -29,6 +30,7 @@
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.1MB.txt" />
+    <EmbeddedResource Include="Resources\Text\Lorum.Ipsum.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.0.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.10.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.1024.txt" />

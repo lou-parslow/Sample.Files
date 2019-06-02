@@ -14,6 +14,9 @@ namespace Sample.Files
             Assert.NotNull(Repository.GetStream("Text.ASCII.1MB.txt"), "GetStream Text.ASCII.1MB.txt");
             var filename = Repository.GetFileName("Text.ASCII.1MB.txt");
             Assert.True(File.Exists(filename),filename);
+
+            filename = Repository.GetFileName("Text.Lorum.Ipsum.txt");
+            Assert.True(File.Exists(filename), filename);
         }
     }
 }
