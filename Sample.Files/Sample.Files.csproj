@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Image\Keyboard.320x240.bmp" />
+    <None Remove="Resources\Image\Keyboard.320x240.gif" />
+    <None Remove="Resources\Image\Keyboard.320x240.jpg" />
+    <None Remove="Resources\Image\Keyboard.320x240.png" />
+    <None Remove="Resources\Image\Keyboard.320x240.tif" />
+    <None Remove="Resources\Text\ASCII.0.txt" />
+    <None Remove="Resources\Text\ASCII.10.txt" />
+    <None Remove="Resources\Text\ASCII.1MB.txt" />
+    <None Remove="Resources\Text\UTF.0.txt" />
+    <None Remove="Resources\Text\UTF.10.txt" />
+    <None Remove="Resources\Text\UTF.1024.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Image\Keyboard.320x240.bmp" />
+    <EmbeddedResource Include="Resources\Image\Keyboard.320x240.gif" />
+    <EmbeddedResource Include="Resources\Image\Keyboard.320x240.jpg" />
+    <EmbeddedResource Include="Resources\Image\Keyboard.320x240.png" />
+    <EmbeddedResource Include="Resources\Image\Keyboard.320x240.tif" />
+    <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
+    <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
+    <EmbeddedResource Include="Resources\Text\ASCII.1MB.txt" />
+    <EmbeddedResource Include="Resources\Text\UTF.0.txt" />
+    <EmbeddedResource Include="Resources\Text\UTF.10.txt" />
+    <EmbeddedResource Include="Resources\Text\UTF.1024.txt" />
+  </ItemGroup>
+
+</Project>

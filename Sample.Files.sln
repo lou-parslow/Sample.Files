@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Files", "Sample.Files\Sample.Files.csproj", "{098B3C3F-6D0D-45A0-BEE4-2503E0265865}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Files.Test", "Sample.Files.Test\Sample.Files.Test.csproj", "{36E9FCFF-5006-4DAD-9439-1555693F9C9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F6B7B83-2260-4554-AC8A-D7250B9C4999}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitlab-ci.yml = .gitlab-ci.yml
+		rakefile.rb = rakefile.rb
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{098B3C3F-6D0D-45A0-BEE4-2503E0265865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098B3C3F-6D0D-45A0-BEE4-2503E0265865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098B3C3F-6D0D-45A0-BEE4-2503E0265865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098B3C3F-6D0D-45A0-BEE4-2503E0265865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E9FCFF-5006-4DAD-9439-1555693F9C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E9FCFF-5006-4DAD-9439-1555693F9C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E9FCFF-5006-4DAD-9439-1555693F9C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E9FCFF-5006-4DAD-9439-1555693F9C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B2665BC-3738-43A9-8763-7B7E117CD396}
+	EndGlobalSection
+EndGlobal
