@@ -30,7 +30,7 @@ namespace Sample.Files
         {
             var stream = GetStream(name);
             if (stream is null) return string.Empty;
-            var filename = Path.GetTempPath() + $"Sample.Files/{name}";
+            var filename = Path.GetTempPath() + $"Sample.Files{Path.DirectorySeparatorChar}{name}";
             var fileInfo = new FileInfo(filename);
             if (!fileInfo.Directory.Exists) fileInfo.Directory.Create();
             if (!File.Exists(filename))
