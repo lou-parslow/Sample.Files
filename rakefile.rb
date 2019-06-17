@@ -1,5 +1,5 @@
 NAME='Sample.Files'
-VERSION='0.0.2'
+VERSION='0.0.3'
 require 'dev'
 
 task :setup do
