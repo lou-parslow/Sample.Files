@@ -12,6 +12,8 @@
     <None Remove="Resources\Image\Keyboard.320x240.jpg" />
     <None Remove="Resources\Image\Keyboard.320x240.png" />
     <None Remove="Resources\Image\Keyboard.320x240.tif" />
+    <None Remove="Resources\Json\Array.Strings.json" />
+    <None Remove="Resources\Json\Object.Strings.json" />
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
     <None Remove="Resources\Text\ASCII.1MB.txt" />
@@ -27,6 +29,8 @@
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.jpg" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.png" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.tif" />
+    <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
+    <EmbeddedResource Include="Resources\Json\Object.Strings.json" />
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.1MB.txt" />
