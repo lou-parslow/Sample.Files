@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +21,7 @@
     <None Remove="Resources\Text\UTF.0.txt" />
     <None Remove="Resources\Text\UTF.10.txt" />
     <None Remove="Resources\Text\UTF.1024.txt" />
+    <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +39,9 @@
     <EmbeddedResource Include="Resources\Text\UTF.0.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.10.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.1024.txt" />
+    <EmbeddedResource Include="Resources\Xaml\ResourceDictionary.Example.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
