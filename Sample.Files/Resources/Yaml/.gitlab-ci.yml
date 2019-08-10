@@ -1,0 +1,13 @@
+﻿image : trestle/devops-base:latest
+
+build:
+  stage: build
+  script: 
+    - dotnet restore Sample.Files.sln
+    - dotnet build --configuration Release 
+
+test:
+  stage: test
+  script:
+    - dotnet test Sample.Files.Test/Sample.Files.Test.csproj  --framework netcoreapp2.0
+

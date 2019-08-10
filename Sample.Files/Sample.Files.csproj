@@ -3,7 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.4</Version>
+    <LangVersion>8.0</LangVersion>
+    <NullableContextOptions>enable</NullableContextOptions>
+    <Version>0.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +24,7 @@
     <None Remove="Resources\Text\UTF.10.txt" />
     <None Remove="Resources\Text\UTF.1024.txt" />
     <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
+    <None Remove="Resources\Yaml\.gitlab-ci.yml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +45,11 @@
     <EmbeddedResource Include="Resources\Xaml\ResourceDictionary.Example.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Yaml\.gitlab-ci.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\NewFolder\" />
   </ItemGroup>
 
 </Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+#nullable enable
 namespace Sample.Files
 {
     public static class Repository
@@ -19,7 +20,7 @@ namespace Sample.Files
             }
         }
 
-        public static Stream GetStream(string name)
+        public static Stream? GetStream(string name)
         {
             return typeof(Repository)
                 .Assembly
@@ -45,3 +46,4 @@ namespace Sample.Files
 
     }
 }
+#nullable disable
