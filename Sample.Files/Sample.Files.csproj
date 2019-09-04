@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <NullableContextOptions>enable</NullableContextOptions>
-    <Version>0.0.6</Version>
+    <Version>0.0.7</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,7 @@
     <None Remove="Resources\Json\.gitlab-ci.json" />
     <None Remove="Resources\Json\Array.Strings.json" />
     <None Remove="Resources\Json\Object.Strings.json" />
+    <None Remove="Resources\Json\States.json" />
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
     <None Remove="Resources\Text\ASCII.1MB.txt" />
@@ -37,6 +38,7 @@
     <EmbeddedResource Include="Resources\Json\.gitlab-ci.json" />
     <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
     <EmbeddedResource Include="Resources\Json\Object.Strings.json" />
+    <EmbeddedResource Include="Resources\Json\States.json" />
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.1MB.txt" />
