@@ -7,7 +7,7 @@ task :test => [:build] do Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csp
 
 task :publish => [:test]  do
 	list=`nuget list Sample.Files -Source nuget.org`
-	puts list
+	#puts list
 	if(!list.include?("Sample.Files #{PROJECT.version}"))
 		NUGET_KEY=ENV['NUGET_KEY']
 		Dir.chdir("#{NAME}/bin/Release") do
