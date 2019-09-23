@@ -11,7 +11,7 @@ task :publish  do
 	if(!list.include?("Sample.Files #{PROJECT.version}"))
 		NUGET_KEY=ENV['NUGET_KEY']
 		Dir.chdir("#{NAME}/bin/Release") do
-			Raykit::run("dotnet nuget push #{NAME}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json")
+			Raykit::run("dotnet nuget push #{NAME}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
 		end
 	end
 end
