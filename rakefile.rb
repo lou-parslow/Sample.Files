@@ -3,9 +3,9 @@ require 'raykit'
 
 task :info do PROJECT.info end
 task :build do Raykit::run("dotnet build --configuration Release") end
-task :test do Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
+task :test => [:build] do Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
 
-task :publish  do
+task :publish => [:test]  do
 	list=`nuget list Sample.Files -Source nuget.org`
 	puts list
 	if(!list.include?("Sample.Files #{PROJECT.version}"))
