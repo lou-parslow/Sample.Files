@@ -7,9 +7,7 @@ end
 
 task :build => Raykit::run("dotnet build --configuration Release")
 
-task :test do
-	Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal")
-end
+task :test => Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal")
 
 task :publish  do
 	
