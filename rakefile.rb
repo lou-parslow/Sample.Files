@@ -1,9 +1,9 @@
 NAME='Sample.Files'
 require 'raykit'
 
-task :info => PROJECT.info
-task :build => Raykit::run("dotnet build --configuration Release")
-task :test => Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal")
+task :info do PROJECT.info end
+task :build do Raykit::run("dotnet build --configuration Release") end
+task :test do Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
 
 task :publish  do
 	list=`nuget list Sample.Files -Source nuget.org`
