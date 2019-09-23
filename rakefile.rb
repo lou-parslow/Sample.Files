@@ -1,17 +1,13 @@
 NAME='Sample.Files'
 require 'raykit'
 
-task :info do
-	PROJECT.info
-end
-
+task :info => PROJECT.info
 task :build => Raykit::run("dotnet build --configuration Release")
-
 task :test => Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal")
 
 task :publish  do
-	
 	list=`nuget list Sample.Files -Source nuget.org`
+	puts list
 	if(!list.include?("Sample.Files #{PROJECT.version}"))
 		NUGET_KEY=ENV['NUGET_KEY']
 		Dir.chdir("#{NAME}/bin/Release") do
@@ -20,8 +16,5 @@ task :publish  do
 	end
 end
 
-task :push do
-	PROJECT.commit.push.tag
-end
-
+task :push => PROJECT.commit.push.tag
 task :default => [:publish,:push]
