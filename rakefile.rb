@@ -5,9 +5,7 @@ task :info do
 	PROJECT.info
 end
 
-task :build do
-	Raykit::run("dotnet build --configuration Release")
-end
+task :build => Raykit::run("dotnet build --configuration Release")
 
 task :test do
 	Raykit::run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal")
@@ -21,8 +19,6 @@ task :publish  do
 		Dir.chdir("#{NAME}/bin/Release") do
 			Raykit::run("dotnet nuget push #{NAME}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json")
 		end
-		#FileUtils.cp("#{NAME}/bin/Release/#{NAME}.#{VERSION}.nupkg","#{NAME}.#{VERSION}.nupkg")
-		#puts `nuget push Sample.Files.#{VERSION}.nupkg -Source https://api.nuget.org/v3/index.json`
 	end
 end
 
