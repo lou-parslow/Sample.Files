@@ -16,5 +16,8 @@ task :publish  do
 	end
 end
 
-task :push => PROJECT.commit.push.tag
+task :push do
+	PROJECT.commit.push.tag
+end
+
 task :default => [:publish,:push]
