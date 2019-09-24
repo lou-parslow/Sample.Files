@@ -9,13 +9,10 @@ task :default do
 					"dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal",
 					"dotnet pack #{PROJECT.name}.sln -c Release"])
 
-		#list=`nuget list Sample.Files -Source nuget.org`
-		#if(!list.include?("Sample.Files #{PROJECT.version}"))
-			NUGET_KEY=ENV['NUGET_KEY']
-			Dir.chdir("#{PROJECT.name}/bin/Release") do
-				PROJECT.run("dotnet nuget push #{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
-			end
-		#end
+		NUGET_KEY=ENV['NUGET_KEY']
+		Dir.chdir("#{PROJECT.name}/bin/Release") do
+			PROJECT.run("dotnet nuget push #{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
+		end
 
 		PROJECT.commit.tag.push.pull
 	end
