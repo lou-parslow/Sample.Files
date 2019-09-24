@@ -1,9 +1,20 @@
-NAME='Sample.Files'
 require 'raykit'
 
-task :info do PROJECT.info end
-task :build do PROJECT.run("dotnet build --configuration Release") end
-task :test => [:build] do PROJECT.run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
+task :default do
+    PROJECT.info.run(["dotnet build --configuration Release",
+				 "dotnet pack quemulus.standard.sln -c Release",
+				 "dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal"])
+
+    PROJECT.commit.tag.push.pull.summary
+end
+
+
+#NAME='Sample.Files'
+#require 'raykit'
+
+#task :info do PROJECT.info end
+#task :build do PROJECT.run("dotnet build --configuration Release") end
+#task :test => [:build] do PROJECT.run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
 
 task :publish => [:test]  do
 	list=`nuget list Sample.Files -Source nuget.org`
@@ -16,8 +27,8 @@ task :publish => [:test]  do
 	end
 end
 
-task :push do
+#task :push do
 	PROJECT.commit.push.tag
-end
+#end
 
-task :default => [:publish,:push]
+#task :default => [:publish,:push]
