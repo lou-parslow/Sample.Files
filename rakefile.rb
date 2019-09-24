@@ -2,7 +2,7 @@ require 'raykit'
 
 task :default do
 	PROJECT.info
-	target='Mocks.Net.Test/obj/Mocks.Net.Test.csproj.nuget.cache'
+	target='Sample.Files.Test/obj/Release/netcoreapp2.0/Sample.Files.Test.csproj.CopyComplete'
 	CLEAN.exclude(target)
 	if(PROJECT.last_modified_filename != target)
 		PROJECT.run(["dotnet build --configuration Release",
