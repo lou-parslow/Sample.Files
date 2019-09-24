@@ -1,25 +1,23 @@
+NAME='Sample.Files'
 require 'raykit'
 
-task :default do
-    PROJECT.info.run(["dotnet build --configuration Release",
-				 "dotnet pack quemulus.standard.sln -c Release",
-				 "dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal"])
+task :info do PROJECT.info end
+task :build do PROJECT.run("dotnet build --configuration Release") end
+task :test => [:build] do PROJECT.run("dotnet test #{NAME}.Test/#{NAME}.Test.csproj -c Release -v normal") end
 
-    PROJECT.commit.tag.push.pull.summary
+task :publish => [:test]  do
+	list=`nuget list Sample.Files -Source nuget.org`
+	#puts list
+	if(!list.include?("Sample.Files #{PROJECT.version}"))
+		NUGET_KEY=ENV['NUGET_KEY']
+		Dir.chdir("#{NAME}/bin/Release") do
+			PROJECT.run("dotnet nuget push #{NAME}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
+		end
+	end
 end
 
-#NAME='Sample.Files'
-#VERSION='0.0.7'
-#require 'dev'
+task :push do
+	PROJECT.commit.push.tag
+end
 
-#task :setup do
-#	puts `nuget restore #{NAME}.sln`
-#end
-
-#task :publish  do
-#	list=`nuget list Sample.Files -Source nuget.org`
-#	if(!list.include?("Sample.Files #{VERSION}"))
-#		FileUtils.cp("#{NAME}/bin/Release/#{NAME}.#{VERSION}.nupkg","#{NAME}.#{VERSION}.nupkg")
-#		puts `nuget push Sample.Files.#{VERSION}.nupkg -Source https://api.nuget.org/v3/index.json`
-#	end
-#end
+task :default => [:publish,:push]
