@@ -6,8 +6,8 @@ task :default do
 	CLEAN.exclude(target)
 	if(PROJECT.last_modified_filename != target)
 		PROJECT.run(["dotnet build --configuration Release",
-					"dotnet pack #{PROJECT.name}.sln -c Release",
-					"dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal"])
+					"dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal",
+					"dotnet pack #{PROJECT.name}.sln -c Release"])
 
 		#list=`nuget list Sample.Files -Source nuget.org`
 		#if(!list.include?("Sample.Files #{PROJECT.version}"))
