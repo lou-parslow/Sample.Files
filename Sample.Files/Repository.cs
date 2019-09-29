@@ -24,7 +24,7 @@ namespace Sample.Files
         {
             return typeof(Repository)
                 .Assembly
-                .GetManifestResourceStream($"Sample.Files.Resources.{name}");
+                .GetManifestResourceStream($"Sample.Files.Resources.{name.Replace("/",".")}");
         }
 
         public static string GetFileName(string name)

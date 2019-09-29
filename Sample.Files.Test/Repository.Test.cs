@@ -18,5 +18,13 @@ namespace Sample.Files
             filename = Repository.GetFileName("Text.Lorum.Ipsum.txt");
             Assert.True(File.Exists(filename), filename);
         }
+
+        [Test]
+        [TestCase("Text.ASCII.1MB.txt")]
+        [TestCase("Text/ASCII.1MB.txt")]
+        public void GetStream(string name)
+        {
+            Assert.NotNull(Repository.GetStream(name), name);
+        }
     }
 }
