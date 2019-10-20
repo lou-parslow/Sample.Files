@@ -10,10 +10,10 @@ task :default do
 					"dotnet pack #{PROJECT.name}.sln -c Release"])
 
 		NUGET_KEY=ENV['NUGET_KEY']
-		Dir.chdir("#{PROJECT.name}/bin/Release") do
+		#Dir.chdir("#{PROJECT.name}/bin/Release") do
 			PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -Source https://api.nuget.org/v3/index.json",false)
 			#PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
-		end
+		#end
 
 		PROJECT.commit.tag.push.pull
 	end
