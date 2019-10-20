@@ -19,6 +19,12 @@
     <None Remove="Resources\Json\Array.Strings.json" />
     <None Remove="Resources\Json\Object.Strings.json" />
     <None Remove="Resources\Json\States.json" />
+    <None Remove="Resources\Lit.Ipsum.docx" />
+    <None Remove="Resources\Lit.Ipsum.pdf" />
+    <None Remove="Resources\Lit.Ipsum.rtf" />
+    <None Remove="Resources\Lit.Ipsum.txt" />
+    <None Remove="Resources\Lit.Ipsum.xps" />
+    <None Remove="Resources\Lit.Ipsum.zip" />
     <None Remove="Resources\Lorem.Ipsum.docx" />
     <None Remove="Resources\Lorem.Ipsum.pdf" />
     <None Remove="Resources\Lorem.Ipsum.rtf" />
@@ -48,6 +54,12 @@
     <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
     <EmbeddedResource Include="Resources\Json\Object.Strings.json" />
     <EmbeddedResource Include="Resources\Json\States.json" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.docx" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.pdf" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.rtf" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.txt" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.xps" />
+    <EmbeddedResource Include="Resources\Lit.Ipsum.zip" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.docx" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.pdf" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.rtf" />
