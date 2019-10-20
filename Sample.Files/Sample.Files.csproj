@@ -4,8 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
-    <NullableContextOptions>enable</NullableContextOptions>
-    <Version>0.0.9</Version>
+    <Nullable>enable</Nullable>
+    <Version>0.0.10</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -19,15 +19,23 @@
     <None Remove="Resources\Json\Array.Strings.json" />
     <None Remove="Resources\Json\Object.Strings.json" />
     <None Remove="Resources\Json\States.json" />
+    <None Remove="Resources\Lorem.Ipsum.docx" />
+    <None Remove="Resources\Lorem.Ipsum.pdf" />
+    <None Remove="Resources\Lorem.Ipsum.rtf" />
+    <None Remove="Resources\Lorem.Ipsum.txt" />
+    <None Remove="Resources\Lorem.Ipsum.xps" />
+    <None Remove="Resources\Lorem.Ipsum.zip" />
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
-    <None Remove="Resources\Text\ASCII.1MB.txt" />
+    <None Remove="Resources\Text\ASCII.1KB.txt" />
     <None Remove="Resources\Text\Lorum.Ipsum.txt" />
     <None Remove="Resources\Text\UTF.0.txt" />
     <None Remove="Resources\Text\UTF.10.txt" />
     <None Remove="Resources\Text\UTF.1024.txt" />
     <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
     <None Remove="Resources\Yaml\.gitlab-ci.yml" />
+    <None Remove="Resources\~%24rem.Ipsum.docx" />
+    <None Remove="Resources\~%24rem.Ipsum.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,9 +48,15 @@
     <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
     <EmbeddedResource Include="Resources\Json\Object.Strings.json" />
     <EmbeddedResource Include="Resources\Json\States.json" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.docx" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.pdf" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.rtf" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.txt" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.xps" />
+    <EmbeddedResource Include="Resources\Lorem.Ipsum.zip" />
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
-    <EmbeddedResource Include="Resources\Text\ASCII.1MB.txt" />
+    <EmbeddedResource Include="Resources\Text\ASCII.1KB.txt" />
     <EmbeddedResource Include="Resources\Text\Lorum.Ipsum.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.0.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.10.txt" />

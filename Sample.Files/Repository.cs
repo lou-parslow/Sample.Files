@@ -36,14 +36,11 @@ namespace Sample.Files
             if (!fileInfo.Directory.Exists) fileInfo.Directory.Create();
             if (!File.Exists(filename))
             {
-                using (var fs = new FileStream(filename, FileMode.Create))
-                {
-                    stream.CopyTo(fs);
-                }
+                using var fs = new FileStream(filename, FileMode.Create);
+                stream.CopyTo(fs);
             }
             return filename;
         }
-
     }
 }
 #nullable disable

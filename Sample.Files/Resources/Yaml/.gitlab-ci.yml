@@ -1,4 +1,4 @@
-﻿image : trestle/devops-base:latest
+﻿image : microsoft/dotnet:latest
 
 build:
   stage: build
