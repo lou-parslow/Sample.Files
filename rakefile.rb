@@ -11,7 +11,7 @@ task :default do
 
 		NUGET_KEY=ENV['NUGET_KEY']
 		Dir.chdir("#{PROJECT.name}/bin/Release") do
-			PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -s https://api.nuget.org/v3/index.json",false)
+			PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -Source https://api.nuget.org/v3/index.json",false)
 			#PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
 		end
 
