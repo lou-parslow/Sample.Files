@@ -20,6 +20,30 @@ namespace Sample.Files
             }
         }
 
+        public static List<string> PathNames
+        {
+            get
+            {
+                var names = new List<string>(Names);
+                var pathNames = new List<string>();
+                var dirNames = new string[] { "Text", "Image", "Json", "Xaml", "Yaml" };
+                foreach(var name in names)
+                {
+                    var pathName = name;
+                    foreach(var dirname in dirNames)
+                    {
+                        if (pathName.IndexOf($"{dirname}.") == 0)
+                        {
+                            pathName = $"{dirname}/" + name.Substring($"{dirname}.".Length);
+                        }
+                    }
+                    
+                    pathNames.Add(pathName);
+                }
+                return pathNames;
+            }
+        }
+
         public static Stream? GetStream(string name)
         {
             return typeof(Repository)

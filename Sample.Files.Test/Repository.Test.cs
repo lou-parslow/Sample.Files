@@ -26,5 +26,14 @@ namespace Sample.Files
         {
             Assert.NotNull(Repository.GetStream(name), name);
         }
+
+        [Test]
+        public void PathNames()
+        {
+            var names = new List<string>(Repository.Names);
+            var pathNames = Repository.PathNames;
+            Assert.AreEqual(names.Count, pathNames.Count,"names.Count, pathNames.Count");
+            Assert.True(pathNames.Contains("Text/ASCII.1KB.txt"));
+        }
     }
 }
