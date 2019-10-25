@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.12</Version>
+    <Version>0.0.13</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -38,6 +38,7 @@
     <None Remove="Resources\Text\UTF.0.txt" />
     <None Remove="Resources\Text\UTF.10.txt" />
     <None Remove="Resources\Text\UTF.1024.txt" />
+    <None Remove="Resources\Xaml\Mesh.Teapot.xaml" />
     <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
     <None Remove="Resources\Yaml\.gitlab-ci.yml" />
     <None Remove="Resources\~%24rem.Ipsum.docx" />
@@ -73,6 +74,7 @@
     <EmbeddedResource Include="Resources\Text\UTF.0.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.10.txt" />
     <EmbeddedResource Include="Resources\Text\UTF.1024.txt" />
+    <EmbeddedResource Include="Resources\Xaml\Mesh.Teapot.xaml" />
     <EmbeddedResource Include="Resources\Xaml\ResourceDictionary.Example.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
