@@ -1,0 +1,24 @@
+﻿{
+  "null": null,
+  "bool_true": true,
+  "bool_false": false,
+  "number_int": 0,
+  "number_float": 1.23,
+  "string_empty": "",
+  "string_date": "2019-11-23T10:38:00.5883691-07:00",
+  "string_zipcode": "98008",
+  "string_phone": "(720) 528-1700",
+  "string_json_characters": "{}[]:,null,true,false",
+  "array_empty": [],
+  "array_nulls": [ null, null, null ],
+  "array_bools": [ true, false, true ],
+  "array_numbers_ints": [ 1, 2, 3, 4, 5 ],
+  "array_numbers_floats": [ 1.2, 3.4, 5.6, 7.8, 9.0 ],
+  "object_empty": {},
+  "object_simple": {
+    "name": "simple",
+    "enabled": false,
+    "size": 25,
+    "score": 4.3
+  }
+}

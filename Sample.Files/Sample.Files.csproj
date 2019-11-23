@@ -17,6 +17,7 @@
     <None Remove="Resources\Image\Keyboard.320x240.tif" />
     <None Remove="Resources\Json\.gitlab-ci.json" />
     <None Remove="Resources\Json\Array.Strings.json" />
+    <None Remove="Resources\Json\Object.Coverage.json" />
     <None Remove="Resources\Json\Object.Strings.json" />
     <None Remove="Resources\Json\States.Array.json" />
     <None Remove="Resources\Json\States.json" />
@@ -55,6 +56,7 @@
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.tif" />
     <EmbeddedResource Include="Resources\Json\.gitlab-ci.json" />
     <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
+    <EmbeddedResource Include="Resources\Json\Object.Coverage.json" />
     <EmbeddedResource Include="Resources\Json\Object.Strings.json" />
     <EmbeddedResource Include="Resources\Json\States.Array.json" />
     <EmbeddedResource Include="Resources\Json\States.json" />
