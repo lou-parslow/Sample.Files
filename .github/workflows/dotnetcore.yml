@@ -15,5 +15,8 @@ jobs:
         dotnet-version: 3.0.100
     - name: Build with dotnet
       run: dotnet build --configuration Release
-           dotnet pack Sample.Files.sln -c Release
-           dotnet test Sample.Files.Test/Sample.Files.Test.csproj -c Release
+    - name: Package with dotnet
+      run: dotnet pack Sample.Files.sln -c Release
+    - name: Run Unit Test
+      run: dotnet test Sample.Files.Test/Sample.Files.Test.csproj -c Release
+
