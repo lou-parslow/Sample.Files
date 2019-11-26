@@ -23,6 +23,7 @@ namespace Sample.Files
         [TestCase("Text.ASCII.1KB.txt")]
         [TestCase("Text/ASCII.1KB.txt")]
         [TestCase("Json/Object.Coverage.json")]
+        [TestCase("Yaml/.gitlab-ci.yml")]
         public void GetStream(string name)
         {
             Assert.NotNull(Repository.GetStream(name), name);

@@ -5,11 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.19</Version>
+    <Version>0.0.20</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\GraphQL\Query.Introspection.graphql" />
     <None Remove="Resources\Image\Keyboard.320x240.bmp" />
     <None Remove="Resources\Image\Keyboard.320x240.gif" />
     <None Remove="Resources\Image\Keyboard.320x240.jpg" />
@@ -50,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\GraphQL\Query.Introspection.graphql" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.bmp" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.gif" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.jpg" />
