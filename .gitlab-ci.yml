@@ -1,13 +1,13 @@
-image : trestle/devops-base:latest
+image : mcr.microsoft.com/dotnet/core/sdk:3.0
 
-build:
+stages:
+  - build
+
+build_job:
   stage: build
-  script: 
-    - dotnet restore Sample.Files.sln
-    - dotnet build --configuration Release 
-
-test:
-  stage: test
+  only:
+    - tags  # the build process will only be started by git tag commits
   script:
-    - dotnet test Sample.Files.Test/Sample.Files.Test.csproj  --framework netcoreapp2.0
-
+    - dotnet build --configuration Release
+    - dotnet pack Sample.Files.sln -c Release
+    - dotnet test Sample.Files.Test/Sample.Files.Test.csproj -c Release
