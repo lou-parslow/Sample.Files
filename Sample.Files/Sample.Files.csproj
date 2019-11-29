@@ -5,50 +5,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.17</Version>
+    <Version>0.0.18</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Resources\Image\Keyboard.320x240.bmp" />
-    <None Remove="Resources\Image\Keyboard.320x240.gif" />
-    <None Remove="Resources\Image\Keyboard.320x240.jpg" />
-    <None Remove="Resources\Image\Keyboard.320x240.png" />
-    <None Remove="Resources\Image\Keyboard.320x240.tif" />
-    <None Remove="Resources\Json\.gitlab-ci.json" />
-    <None Remove="Resources\Json\Array.Strings.json" />
-    <None Remove="Resources\Json\Object.Coverage.json" />
-    <None Remove="Resources\Json\Object.Strings.json" />
-    <None Remove="Resources\Json\States.Array.json" />
-    <None Remove="Resources\Json\States.json" />
-    <None Remove="Resources\Lit.Ipsum.docx" />
-    <None Remove="Resources\Lit.Ipsum.pdf" />
-    <None Remove="Resources\Lit.Ipsum.rtf" />
-    <None Remove="Resources\Lit.Ipsum.txt" />
-    <None Remove="Resources\Lit.Ipsum.xps" />
-    <None Remove="Resources\Lit.Ipsum.zip" />
-    <None Remove="Resources\Lorem.Ipsum.docx" />
-    <None Remove="Resources\Lorem.Ipsum.pdf" />
-    <None Remove="Resources\Lorem.Ipsum.rtf" />
-    <None Remove="Resources\Lorem.Ipsum.txt" />
-    <None Remove="Resources\Lorem.Ipsum.xps" />
-    <None Remove="Resources\Lorem.Ipsum.zip" />
-    <None Remove="Resources\Text\ASCII.0.txt" />
-    <None Remove="Resources\Text\ASCII.10.txt" />
-    <None Remove="Resources\Text\ASCII.1KB.txt" />
-    <None Remove="Resources\Text\Lorum.Ipsum.txt" />
-    <None Remove="Resources\Text\UTF.0.txt" />
-    <None Remove="Resources\Text\UTF.10.txt" />
-    <None Remove="Resources\Text\UTF.1024.txt" />
-    <None Remove="Resources\Xaml\Mesh.Cube.xaml" />
-    <None Remove="Resources\Xaml\Mesh.Teapot.xaml" />
-    <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
-    <None Remove="Resources\Xaml\Viewport3D.Scene.xaml" />
-    <None Remove="Resources\Yaml\.gitlab-ci.yml" />
-    <None Remove="Resources\~%24rem.Ipsum.docx" />
-    <None Remove="Resources\~%24rem.Ipsum.txt" />
-  </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.bmp" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.gif" />
