@@ -43,6 +43,7 @@
     <None Remove="Resources\Xaml\Mesh.Cube.xaml" />
     <None Remove="Resources\Xaml\Mesh.Teapot.xaml" />
     <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
+    <None Remove="Resources\Xaml\Viewport3D.Scene.xaml" />
     <None Remove="Resources\Yaml\.gitlab-ci.yml" />
     <None Remove="Resources\~%24rem.Ipsum.docx" />
     <None Remove="Resources\~%24rem.Ipsum.txt" />
@@ -85,6 +86,12 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Yaml\.gitlab-ci.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Xaml\Viewport3D.Scene.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
