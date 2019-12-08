@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.22</Version>
+    <Version>0.0.23</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -16,6 +16,7 @@
     <None Remove="Resources\Image\Keyboard.320x240.jpg" />
     <None Remove="Resources\Image\Keyboard.320x240.png" />
     <None Remove="Resources\Image\Keyboard.320x240.tif" />
+    <None Remove="Resources\index.htm" />
     <None Remove="Resources\Json\.gitlab-ci.json" />
     <None Remove="Resources\Json\Array.Strings.json" />
     <None Remove="Resources\Json\Arrays.Deep.json" />
@@ -57,6 +58,7 @@
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.jpg" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.png" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.tif" />
+    <EmbeddedResource Include="Resources\index.htm" />
     <EmbeddedResource Include="Resources\Json\.gitlab-ci.json" />
     <EmbeddedResource Include="Resources\Json\Array.Strings.json" />
     <EmbeddedResource Include="Resources\Json\Arrays.Deep.json" />
@@ -90,5 +92,4 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Yaml\.gitlab-ci.yml" />
   </ItemGroup>
-
 </Project>
