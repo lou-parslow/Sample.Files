@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.24</Version>
+    <Version>0.0.25</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -49,6 +49,7 @@
     <None Remove="Resources\Xaml\Mesh.Cube.xaml" />
     <None Remove="Resources\Xaml\Mesh.Teapot.xaml" />
     <None Remove="Resources\Xaml\ResourceDictionary.Example.xaml" />
+    <None Remove="Resources\Xaml\Viewport3D.Scene.xaml" />
     <None Remove="Resources\Yaml\.gitlab-ci.yml" />
     <None Remove="Resources\~%24rem.Ipsum.docx" />
     <None Remove="Resources\~%24rem.Ipsum.txt" />
@@ -96,6 +97,7 @@
     <EmbeddedResource Include="Resources\Xaml\ResourceDictionary.Example.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Xaml\Viewport3D.Scene.xaml" />
     <EmbeddedResource Include="Resources\Yaml\.gitlab-ci.yml" />
   </ItemGroup>
 </Project>

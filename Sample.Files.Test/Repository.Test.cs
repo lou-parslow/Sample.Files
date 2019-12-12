@@ -24,6 +24,7 @@ namespace Sample.Files
         [TestCase("Text/ASCII.1KB.txt")]
         [TestCase("Json/Object.Coverage.json")]
         [TestCase("Yaml/.gitlab-ci.yml")]
+        [TestCase("Xaml/Viewport3D.Scene.xaml")]
         [TestCase("index.htm")]
         public void GetStream(string name)
         {
