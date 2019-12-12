@@ -5,11 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.23</Version>
+    <Version>0.0.24</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Extension.MimeTypes.json" />
     <None Remove="Resources\GraphQL\Query.Introspection.graphql" />
     <None Remove="Resources\Image\Keyboard.320x240.bmp" />
     <None Remove="Resources\Image\Keyboard.320x240.gif" />
@@ -36,6 +37,8 @@
     <None Remove="Resources\Lorem.Ipsum.txt" />
     <None Remove="Resources\Lorem.Ipsum.xps" />
     <None Remove="Resources\Lorem.Ipsum.zip" />
+    <None Remove="Resources\Signature.Extensions.json" />
+    <None Remove="Resources\Text.Extensions.json" />
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
     <None Remove="Resources\Text\ASCII.1KB.txt" />
@@ -52,6 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Extension.MimeTypes.json" />
     <EmbeddedResource Include="Resources\GraphQL\Query.Introspection.graphql" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.bmp" />
     <EmbeddedResource Include="Resources\Image\Keyboard.320x240.gif" />
@@ -78,6 +82,8 @@
     <EmbeddedResource Include="Resources\Lorem.Ipsum.txt" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.xps" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.zip" />
+    <EmbeddedResource Include="Resources\Signature.Extensions.json" />
+    <EmbeddedResource Include="Resources\Text.Extensions.json" />
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.1KB.txt" />
