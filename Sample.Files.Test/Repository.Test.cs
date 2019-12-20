@@ -25,6 +25,7 @@ namespace Sample.Files
         [TestCase("Json/Object.Coverage.json")]
         [TestCase("Yaml/.gitlab-ci.yml")]
         [TestCase("index.htm")]
+        [TestCase("GraphQL/Query.Introspection.graphql")]
         public void GetStream(string name)
         {
             Assert.NotNull(Repository.GetStream(name), name);
