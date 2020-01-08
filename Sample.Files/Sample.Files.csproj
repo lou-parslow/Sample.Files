@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>0.0.25</Version>
+    <Version>0.0.26</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -38,6 +38,7 @@
     <None Remove="Resources\Lorem.Ipsum.xps" />
     <None Remove="Resources\Lorem.Ipsum.zip" />
     <None Remove="Resources\Signature.Extensions.json" />
+    <None Remove="Resources\States.bin" />
     <None Remove="Resources\Text.Extensions.json" />
     <None Remove="Resources\Text\ASCII.0.txt" />
     <None Remove="Resources\Text\ASCII.10.txt" />
@@ -84,6 +85,7 @@
     <EmbeddedResource Include="Resources\Lorem.Ipsum.xps" />
     <EmbeddedResource Include="Resources\Lorem.Ipsum.zip" />
     <EmbeddedResource Include="Resources\Signature.Extensions.json" />
+    <EmbeddedResource Include="Resources\States.bin" />
     <EmbeddedResource Include="Resources\Text.Extensions.json" />
     <EmbeddedResource Include="Resources\Text\ASCII.0.txt" />
     <EmbeddedResource Include="Resources\Text\ASCII.10.txt" />
