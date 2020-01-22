@@ -1,5 +1,5 @@
 ﻿{
-  "image": "trestle/devops-base:latest",
+  "image": "mcr.microsoft.com/dotnet/core/sdk:3.0",
   "build": {
     "stage": "build",
     "script": [ "dotnet restore Sample.Files.sln", "dotnet build --configuration Release" ]
