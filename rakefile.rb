@@ -14,7 +14,7 @@ task :default do
 		#NUGET_KEY=ENV['NUGET_KEY']
 		#PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
 
-		PROJECT.commit.tag.push.pull
+		#PROJECT.commit.tag.push.pull
 	end
 	PROJECT.summary
 end
