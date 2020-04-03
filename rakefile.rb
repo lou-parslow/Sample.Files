@@ -1,7 +1,7 @@
-require 'raykit'
+require 'dotkit'
 
 task :default do
-	PROJECT.info
+	#PROJECT.info
 	target='Sample.Files.Test/obj/Release/netcoreapp2.0/Sample.Files.Test.csproj.CopyComplete'
 	CLEAN.exclude(target)
 	if(PROJECT.last_modified_filename != target)
@@ -16,5 +16,5 @@ task :default do
 
 		#PROJECT.commit.tag.push.pull
 	end
-	PROJECT.summary
+	#PROJECT.summary
 end
