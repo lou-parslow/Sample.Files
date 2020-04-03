@@ -9,8 +9,8 @@ task :default do
 		#			"dotnet test #{PROJECT.name}.Test/#{PROJECT.name}.Test.csproj -c Release -v normal",
 		#			"dotnet pack #{PROJECT.name}.sln -c Release"])
 
-		NUGET_KEY=ENV['NUGET_KEY']
-		PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -s https://api.nuget.org/v3/index.json -k #{NUGET_KEY}",false)
+		#NUGET_KEY=ENV['NUGET_KEY']
+		#PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -s https://api.nuget.org/v3/index.json -k #{NUGET_KEY}",false)
 		#NUGET_KEY=ENV['NUGET_KEY']
 		#PROJECT.run("dotnet nuget push #{PROJECT.name}/bin/Release/#{PROJECT.name}.#{PROJECT.version}.nupkg -k #{NUGET_KEY} -s https://api.nuget.org/v3/index.json",false)
 
